@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Golden Girls Hangman</title>
+    <title>NFL Hangman</title>
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
@@ -14,13 +14,14 @@
 
 <body>
     <div class="jumbotron text-center">
-        <img id="logo" class="img-fluid" src="assets/images/title-logo.jpg" alt="Title Logo" />
+        <img id="logo" class="img-fluid" src="assets/images/header.jpg" alt="Title Logo" />
         <h1 class="display-4">Hangman</h1>
         <p class="instructions">
-            Guess the Golden Girls reference by typing any letter on your keyboard.
+            Guess the NFL team by typing any letter on your keyboard.
             Press any key to start.
         </p>
-        <div id="win-lose"></div>
+        <div id="win-lose">
+        </div>
     </div>
     <div class="container">
         <div class="row">
@@ -29,7 +30,7 @@
 
         <div class="row">
             <div class="col-md-6" id="picture">
-                <img src="assets/images/group-start.jpg" class="img img-fluid"  alt="The Girls" style="width: 300px; height: 300px;">
+                <img src="assets/images/start.png" class="img img-fluid"  alt="logos" style="width: 300px; height: 300px;">
             </div>
 
             <div class="col-md-6 text-center" id="right-side">
@@ -37,7 +38,7 @@
                 <h2 class="label">Current Game:</h2>
                 <br>
                 <div id="current">
-                    <h2>_ _ _ _ _ _ _ _ _</h2>
+                    
                 </div>
                 <hr>
                 
@@ -51,21 +52,21 @@
                 <h4 class="label">Letters Guessed:</h4>
                 <br>
                 <div id="wrongLetters"> 
-                    l k w e f
+                    
                 </div>
                 <hr>
                 
                 <h4 class="label">Games Won:</h4>
                 <br>
                 <div id="winCounter">
-                    5
+                    
                 </div>
                 <hr>
 
                 <h4 class="label">Games Lossed:</h4>
                 <br>
                 <div id="lossCounter">
-                    7
+                    
                 </div>
                 <hr>
 

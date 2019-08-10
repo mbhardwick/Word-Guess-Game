@@ -1,12 +1,15 @@
 //GLOBAL VARIABLES
 //======================================================================
 //Arrays and Variables for holding data
-var wordOptions = ["sophia" + "petrillo", "rose " + "nylan", "blanche " + "devereaux", "dorothy " + "zbornak", "cheesecake", "miami", "southern " + "bell", "sicily"];
+var wordBank = ["cardinals", "falcons", "ravens", "bills", "panthers", "bears", "bengals", "browns", "cowboys", "broncos", "lions", "packers", "texans", "colts", "jaguars", "chiefs", "rams", "dolphins", "vikings", "patriots",
+"saints", "giants", "jets", "raiders", "eagles", "steelers", "chargers", "niners", "seahawks", "buccaneers", "titans", "redskins"];
+
 var selectedWord = "";
 var lettersinWord = [];
 var numBlanks = 0;
 var blanksAndSuccesses = [];
 var wrongLetters = [];
+
 
 //Game counters
 var winCount = 0;
@@ -15,12 +18,13 @@ var guessesLeft = 12;
 
 
 
+
 //FUNCTIONS
 //======================================================================
 //Start
 //select random word
 function startGame () {
-    selectedWord = wordOptions[Math.floor(Math.random() * wordOptions.length)];
+    selectedWord = wordBank[Math.floor(Math.random() * wordBank.length)];
 
     //breakdown word into individual letters
     lettersinWord = selectedWord.split("");
@@ -35,7 +39,7 @@ function startGame () {
 
     //Populate blanks and successes with right number of blanks
     for (var i=0; i<numBlanks; i++){
-        blanksAndSuccesses.push("_");
+        blanksAndSuccesses.push(" _ ");
     }
 
     //Change HTML to reflect round conditions
@@ -73,15 +77,13 @@ function checkLetters(letter) {
     }
 
     //wrong guess
-    else if {
+    else {
         wrongLetters.push(letter);
         guessesLeft--
     }
 
     //repeat guess
-    else {
-
-    }
+    
         console.log(blanksAndSuccesses);
     
 }
@@ -113,9 +115,11 @@ function roundComplete() {
         //update HTML
         document.getElementById("lossCounter").innerHTML = lossCount;
 
+
         startGame();
 
     }
+
 
 }
 //MAIN PROCESS
