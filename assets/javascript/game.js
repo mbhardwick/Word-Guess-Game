@@ -29,7 +29,7 @@ function startGame () {
     //breakdown word into individual letters
     lettersinWord = selectedWord.split("");
 
-    //blanks required for word ----auto?
+    //blanks required for word 
     numBlanks = lettersinWord.length;
 
     //Reset
@@ -82,14 +82,13 @@ function checkLetters(letter) {
         guessesLeft--
     }
 
-    //repeat guess
-    
-        console.log(blanksAndSuccesses);
-    
+    //if repeat letter guessed, no action
+       
+        
 }
 
 function roundComplete() {
-    console.log("Games Won: " + winCount + " | Games Lossed: " + lossCount + " | Guesses Remaining: " + guessesLeft);
+    console.log("Games Won: " + winCount + " | Games Lost: " + lossCount + " | Guesses Remaining: " + guessesLeft);
 
     //Update HTML to reflect most recent stats
     document.getElementById("numGuesses").innerHTML = guessesLeft;
@@ -99,10 +98,11 @@ function roundComplete() {
     //check if user won
     if (lettersinWord.toString() === blanksAndSuccesses.toString()) {
         winCount++;
-        alert("You Won!");
+        //logo image of correct answer appears
 
         //update in HTML
         document.getElementById("winCounter").innerHTML = winCount;
+        document.getElementById("win-lose").innerHTML = selectedWord + " is Correct! You Win!";
 
         startGame();
     }
@@ -110,10 +110,11 @@ function roundComplete() {
     else if (guessesLeft === 0) {
 
         lossCount++;
-        alert("You lost!");
+        
 
         //update HTML
         document.getElementById("lossCounter").innerHTML = lossCount;
+        document.getElementById("win-lose").innerHTML = "You Lose! The answer was " + selectedWord;
 
 
         startGame();
