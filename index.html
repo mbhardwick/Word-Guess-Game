@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>NFL Hangman</title>
-    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Graduate&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/css/style.css">
@@ -14,15 +14,18 @@
 
 <body>
     <div class="jumbotron text-center">
-        <img id="logo" class="img-fluid" src="assets/images/header.jpg" alt="Title Logo" />
-        <h1 class="display-4">Hangman</h1>
-        <p class="instructions">
-            Guess the NFL team by typing any letter on your keyboard.
-            Press any key to start.
-        </p>
-        <div id="win-lose">
+        <img id="header" class="img img-fluid" src="assets/images/header.jpg" alt="Title Logo" />
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <h1 class="col-md-12 text-center ">Hangman</h1><br>
+            <p class="instructions">
+                Guess the NFL team by typing any letter on your keyboard.
+            </p>
         </div>
     </div>
+
     <div class="container">
         <div class="row">
             <div col="col-lrg-12 text-center" id="last-answer"></div>
@@ -30,7 +33,7 @@
 
         <div class="row">
             <div class="col-md-6" id="picture">
-                <img src="assets/images/start.png" class="img img-fluid"  alt="logos" style="width: 300px; height: 300px;">
+                <img src="assets/images/start.png" class="img img-fluid logo" alt="logos" style="width: 375px; height: 300px;">
             </div>
 
             <div class="col-md-6 text-center" id="right-side">

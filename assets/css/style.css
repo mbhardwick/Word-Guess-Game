@@ -1,3 +1,37 @@
 body {
-    font-family: 'Didact Gothic', sans-serif;
+    font-family: 'Graduate', cursive;
+    color: #033466;
+    background: rgb(160, 160, 160);
+}
+
+.jumbotron, #header {
+    height: 350px;
+}
+
+.jumbotron {
+    margin: 0;
+    padding: 0;
+    background: #000408;
+    font-family: 'Graduate', cursive;
+}
+#header {
+    margin: 0 auto;
+    padding: 0;
+    position: center;
+    width: 750px;
+}
+
+.logo {
+    margin: 150px auto;
+    
+}
+
+#right-side {
+    clear: both;
+    margin: 100px auto;
+    padding: 15px;
+}
+
+h1, p {
+    margin: auto;
 }
