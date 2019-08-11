@@ -1,7 +1,7 @@
 body {
     font-family: 'Graduate', cursive;
     color: #033466;
-    background: rgb(160, 160, 160);
+    background: #989998;
 }
 
 .jumbotron, #header {
@@ -22,16 +22,24 @@ body {
 }
 
 .logo {
-    margin: 150px auto;
+    margin: 60px auto;
     
 }
 
 #right-side {
     clear: both;
-    margin: 100px auto;
+    margin: 40px auto;
     padding: 15px;
 }
 
 h1, p {
     margin: auto;
+}
+
+#win-lose {
+    text-align: center;
+    font-size: 36px;
+    margin: 10px auto;
+    font-weight: bold;
+    color:#e80000;
 }
